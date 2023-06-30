@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+  <!-- <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container label {
+      font-weight: bold;
+    }
+
+    .container input[type="text"],
+    .container input[type="number"],
+    .container input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container input[type="file"] {
+      margin-top: 10px;
+    }
+
+    .container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Form</h2>
+    <form id="userForm" method="post" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" name="weight" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="healthReport">Health Report:</label>
+      <input type="file" id="healthReport" name="healthReport" required accept=".pdf">
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>Fetch Form</h2>
+    <form id="userForm" method="post" enctype="multipart/form-data">
+      <!-- ... Existing form fields ... -->
+
+      <label for="fetchEmail">Email to Fetch:</label>
+      <input type="email" id="fetchEmail" name="fetchEmail" required>
+
+      <!-- <input type="submit" value="Fetch Report"> -->
+      <input type="submit" id="fetchButton" value="Fetch Report">
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
